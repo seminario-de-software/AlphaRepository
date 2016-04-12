@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Unicah App</string>
+
+    <string name="navigation_drawer_open">Abrir Menu</string>
+    <string name="navigation_drawer_close">Cerrar Menu</string>
+
+    <string name="action_settings">Configuraciones</string>
+</resources>

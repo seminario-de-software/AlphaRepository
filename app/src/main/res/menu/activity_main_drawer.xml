@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_principal"
+            android:icon="@drawable/ic_home"
+            android:title="Pagina Principal" />
+        <item
+            android:id="@+id/nav_recordatorios"
+            android:icon="@drawable/ic_alarm_add"
+            android:title="Recordatorios" />
+        <item
+            android:id="@+id/nav_universidad"
+            android:icon="@drawable/ic_account_balance"
+            android:title="La Universidad" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_conf"
+                android:icon="@drawable/ic_settings"
+                android:title="Configuracion" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_help"
+                android:title="Acerca de" />
+        </menu>
+    </item>
+
+</menu>
