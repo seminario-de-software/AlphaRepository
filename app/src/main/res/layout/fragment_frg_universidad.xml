@@ -42,7 +42,7 @@
                         android:layout_height="120dp"
                         android:layout_alignParentTop="true"
                         android:scaleType="fitXY"
-                        android:src="@mipmap/computacion" />
+                        android:src="@mipmap/virgen" />
 
                     <TextView
                         android:id="@+id/title"
@@ -60,6 +60,8 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/title"
                         android:paddingLeft="8dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
                         android:text="Nuestra Señora Reina de la Paz"
                         android:textColor="#666"
                         android:textSize="12sp" />
