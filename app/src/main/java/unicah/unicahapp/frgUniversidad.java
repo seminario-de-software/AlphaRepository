@@ -45,8 +45,6 @@ public class frgUniversidad extends Fragment {
             public void onClick(View v)
             {
                 ((MainActivity) getActivity()).LoadFragment(new frgUnicah());
-                Log.d("Fragment","CreateView->OnClickCard:Unicah");
-
             }
         });
 

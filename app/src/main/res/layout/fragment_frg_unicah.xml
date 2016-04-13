@@ -21,7 +21,8 @@
                 android:layout_height="200dp"
                 android:layout_alignParentTop="true"
                 android:scaleType="fitXY"
-                android:src="@mipmap/virgen" />
+                android:src="@mipmap/virgen"
+                />
 
             <TextView
                 android:layout_width="match_parent"
