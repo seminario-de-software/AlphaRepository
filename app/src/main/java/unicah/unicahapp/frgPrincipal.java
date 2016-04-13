@@ -38,8 +38,6 @@ public class frgPrincipal extends Fragment {
 
         // Obtenemos la vista principal
 
-        vistaPrinciapal = getView();
-
         // enlace con interfaz
 
         lvRecordatorios = (ListView) vistaPrinciapal.findViewById(R.id.lvRecordatorios);
@@ -63,7 +61,7 @@ public class frgPrincipal extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_frg_principal, container, false);
+        return vistaPrinciapal = inflater.inflate(R.layout.fragment_frg_principal, container, false);
     }
 
     @Override
