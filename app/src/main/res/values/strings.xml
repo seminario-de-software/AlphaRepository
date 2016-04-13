@@ -6,7 +6,7 @@
 
     <string name="action_settings">Configuraciones</string>
 
-        <string name="txtRec">Recordatorios</string>
+        <string name="txtRec">Hoy</string>
         <string name="txtAnun">Anuncios</string>
         <string name="txtNoti">Noticias</string>
 
