@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity
 
     private FragmentTransaction FrgTransaction;
     private FragmentManager FrgManager;
-    private NavigationView navigationView;
+    private NavigationView navigationView; // contenido
+    private DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,20 +42,27 @@ public class MainActivity extends AppCompatActivity
         });
         */
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        /* Fragment Manager
-        */
+        /*
+         *
+         * Fragment Manager
+         *
+         */
+
+        FrgManager = getSupportFragmentManager();
+
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         //Do not reload fragment when returning from saved state
-        Fragment CurrentFrg = getSupportFragmentManager().findFragmentById(R.id.fragmentholder);
+        Fragment CurrentFrg = FrgManager.findFragmentById(R.id.fragmentholder);
         if(CurrentFrg == null)
         {
             LoadFragment(new frgPrincipal());
@@ -66,7 +74,6 @@ public class MainActivity extends AppCompatActivity
      */
     private void LoadFragment(Fragment Frg)
     {
-        FrgManager = getSupportFragmentManager();
         FrgTransaction = FrgManager.beginTransaction();
         FrgTransaction.replace(R.id.fragmentholder,Frg);
         FrgTransaction.commit();
@@ -74,7 +81,6 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -104,7 +110,6 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -126,10 +131,10 @@ public class MainActivity extends AppCompatActivity
             //Todo: All other fragments
         }
 
-        if(Frg != null)
+        if(Frg != null) {
             LoadFragment(Frg);
+        }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

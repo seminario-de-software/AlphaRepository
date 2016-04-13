@@ -5,4 +5,9 @@
     <string name="navigation_drawer_close">Cerrar Menu</string>
 
     <string name="action_settings">Configuraciones</string>
+
+        <string name="txtRec">Recordatorios</string>
+        <string name="txtAnun">Anuncios</string>
+        <string name="txtNoti">Noticias</string>
+
 </resources>
