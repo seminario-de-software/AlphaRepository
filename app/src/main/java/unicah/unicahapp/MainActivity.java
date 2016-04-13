@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity
 
     /* Load fragment into placeholder.
      */
-    private void LoadFragment(Fragment Frg)
+    public void LoadFragment(Fragment Frg)
     {
         FrgTransaction = FrgManager.beginTransaction();
         FrgTransaction.replace(R.id.fragmentholder,Frg);
