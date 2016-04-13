@@ -36,9 +36,13 @@ public class frgPrincipal extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Obtenemos la vista principal
+    }
 
-        // enlace con interfaz
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        vistaPrinciapal = inflater.inflate(R.layout.fragment_frg_principal, container, false);
 
         lvRecordatorios = (ListView) vistaPrinciapal.findViewById(R.id.lvRecordatorios);
         lvAnuncios =      (ListView) vistaPrinciapal.findViewById(R.id.lvAnuncios);
@@ -54,14 +58,8 @@ public class frgPrincipal extends Fragment {
         lvAnuncios.setAdapter(adaptadorListas);
         lvNoticias.setAdapter(adaptadorListas);
 
+        return vistaPrinciapal;
 
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return vistaPrinciapal = inflater.inflate(R.layout.fragment_frg_principal, container, false);
     }
 
     @Override
