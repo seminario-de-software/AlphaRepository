@@ -27,7 +27,7 @@
                 android:layout_margin="2dp"
                 android:id="@+id/card_view"
                 android:layout_width="150dp"
-                android:layout_height="200dp"
+                android:layout_height="188dp"
                 card_view:cardCornerRadius="2dp"
                 android:layout_column="0"
                 android:layout_gravity="left|top"
@@ -39,31 +39,34 @@
                     <ImageView
                         android:id="@+id/thumbnail"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="120dp"
                         android:layout_alignParentTop="true"
-                        android:src="@mipmap/computacion" />
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/virgen" />
 
                     <TextView
                         android:id="@+id/title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/thumbnail"
-                        android:maxLines="3"
                         android:padding="8dp"
-                        android:text="TITLE"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="UNICAH"
                         android:textColor="#222"
                         android:textStyle="bold"
-                        android:textSize="22dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/title"
-                        android:maxLines="3"
-                        android:padding="8dp"
-                        android:text="Subtitulo"
+                        android:paddingLeft="8dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Nuestra Señora Reina de la Paz"
                         android:textColor="#666"
-                        android:textSize="14dp" />
+                        android:textSize="12sp" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
@@ -75,7 +78,7 @@
                 android:layout_margin="2dp"
                 android:id="@+id/card_view2"
                 android:layout_width="150dp"
-                android:layout_height="200dp"
+                android:layout_height="188dp"
                 card_view:cardCornerRadius="2dp"
                 android:layout_column="1"
                 android:layout_gravity="left|top"
@@ -87,31 +90,141 @@
                     <ImageView
                         android:id="@+id/thumbnail2"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="120dp"
                         android:layout_alignParentTop="true"
-                        android:src="@mipmap/ambiental" />
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/allcampus" />
 
                     <TextView
                         android:id="@+id/title2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/thumbnail2"
-                        android:maxLines="3"
                         android:padding="8dp"
-                        android:text="TITLE"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Nuestros Campus"
                         android:textColor="#222"
                         android:textStyle="bold"
-                        android:textSize="22dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/title2"
-                        android:maxLines="3"
-                        android:padding="8dp"
-                        android:text="Subtitulo"
+                        android:paddingLeft="8dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="11 Campus"
                         android:textColor="#666"
-                        android:textSize="14dp" />
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_margin="2dp"
+                android:id="@+id/card_view3"
+                android:layout_width="150dp"
+                android:layout_height="188dp"
+                card_view:cardCornerRadius="2dp"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_weight=".5"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/thumbnail3"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/allfacultades" />
+
+                    <TextView
+                        android:id="@+id/title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumbnail3"
+                        android:padding="8dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Facultades"
+                        android:textColor="#222"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title3"
+                        android:paddingLeft="8dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="La mejor forma de predecir el futuro es crearlo."
+                        android:textColor="#666"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_margin="2dp"
+                android:id="@+id/card_view4"
+                android:layout_width="150dp"
+                android:layout_height="188dp"
+                card_view:cardCornerRadius="2dp"
+                android:layout_column="1"
+                android:layout_gravity="left|top"
+                android:layout_weight=".5"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/thumbnail4"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/alumnos2_1" />
+
+                    <TextView
+                        android:id="@+id/title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumbnail4"
+                        android:padding="8dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Admisiones"
+                        android:textColor="#222"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title4"
+                        android:paddingLeft="8dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="¿Qué debo hacer?"
+                        android:textColor="#666"
+                        android:textSize="12sp" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
         </TableRow>
