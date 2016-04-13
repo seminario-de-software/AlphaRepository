@@ -4,6 +4,8 @@ package unicah.unicahapp;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +24,7 @@ public class frgUniversidad extends Fragment {
 
     @Override
     public void onAttach(Context context) {
+
         super.onAttach(context);
     }
 
@@ -33,8 +36,20 @@ public class frgUniversidad extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View frgView = inflater.inflate(R.layout.fragment_frg_universidad, container, false);
+
+        CardView Card = (CardView) frgView.findViewById(R.id.card_view);
+        Card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                ((MainActivity) getActivity()).LoadFragment(new frgUnicah());
+            }
+        });
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_frg_universidad, container, false);
+        return frgView;
     }
 
     @Override
