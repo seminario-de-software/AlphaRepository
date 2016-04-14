@@ -9,6 +9,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 import unicah.unicahapp.R;
 
@@ -47,6 +50,15 @@ public class frgUniversidad extends Fragment {
                 ((MainActivity) getActivity()).LoadFragment(new frgUnicah());
             }
         });
+
+        ImageView Img = (ImageView) frgView.findViewById(R.id.thumbnail);
+        Glide.with(Img.getContext()).load(R.mipmap.virgen).into(Img);
+        Img = (ImageView) frgView.findViewById(R.id.thumbnail2);
+        Glide.with(Img.getContext()).load(R.mipmap.allcampus).into(Img);
+        Img = (ImageView) frgView.findViewById(R.id.thumbnail3);
+        Glide.with(Img.getContext()).load(R.mipmap.allfacultades).into(Img);
+        Img = (ImageView) frgView.findViewById(R.id.thumbnail4);
+        Glide.with(Img.getContext()).load(R.mipmap.alumnos2_1).into(Img);
 
         // Inflate the layout for this fragment
         return frgView;
