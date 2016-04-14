@@ -6,8 +6,16 @@
 
     <string name="action_settings">Configuraciones</string>
 
-        <string name="txtRec">Hoy</string>
-        <string name="txtAnun">Anuncios</string>
-        <string name="txtNoti">Noticias</string>
+    <string name="txtRec">Hoy</string>
+    <string name="txtAnun">Anuncios</string>
+    <string name="txtNoti">Noticias</string>
+    
+    <string name="unicah_intro">
+        Creada de acuerdo al derecho canónico en junio de 1992,
+        fue autorizada oficialmente el 04 de diciembre del mismo año e inicio sus actividades académicas el 03 de febrero de 1993,
+        fiesta en honor a la Virgen de Suyapa, patrona de Honduras, en las instalaciones del antiguo seminario menor de San José.
+        La Universidad Católica De Honduras, Nuestra Señora Reina de la Paz, es una institución de educación superior que pertenece a
+        la iglesia católica y se rige tanto por el derecho canónico como por las leyes de Honduras.
+    </string>
 
 </resources>
