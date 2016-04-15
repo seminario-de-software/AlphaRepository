@@ -67,8 +67,6 @@ public class frgPrincipal extends Fragment {
 
         // Poblacion de las listas
 
-
-
         return vistaPrinciapal;
 
     }
