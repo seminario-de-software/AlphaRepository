@@ -87,6 +87,9 @@ public class frgPrincipal extends Fragment {
 
     private void getData(){
         String[] titulos = {"Noticia 1","Noticia 2"};
+        String[] resumenes = {"Aliquam turpis ex, vulputate eget tempor rutrum, efficitur vel orci. Morbi nec quam elit. Proin et hendrerit metus, non sollicitudin nisl. Curabitur ut ullamcorper est. Cras congue tempor commodo. Integer laoreet, nunc id varius euismod, nisl diam convallis magna, id tempor tortor massa et lectus. Donec sit amet urna ut ligula condimentum placerat. Donec accumsan interdum consectetur. Vestibulum sed est dignissim, lacinia lacus at, tincidunt nibh. ","Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque blandit quam nisl, nec pharetra tellus placerat sit amet. Quisque sollicitudin iaculis felis, ut accumsan eros sollicitudin lacinia. Praesent commodo urna lorem, eu accumsan dolor fringilla eget. Duis pulvinar faucibus arcu a congue. Quisque auctor, lorem et efficitur luctus, felis nisl blandit quam, ut varius lacus diam id leo. Nunc consectetur quam a ex molestie, vitae dapibus urna venenatis. Nullam viverra, justo et venenatis dignissim, nisl neque faucibus odio, at elementum ex ex ut mi. Praesent enim sapien, rhoncus id varius eu, pulvinar auctor felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis euismod justo id neque tempus, sed suscipit lorem finibus. "};
+
+
 
     }
 
