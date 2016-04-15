@@ -18,6 +18,27 @@
         la iglesia católica y se rige tanto por el derecho canónico como por las leyes de Honduras.
     </string>
 
+    <string name="becacompleta">
+        Esta beca se le otorga al recien graduado, que haya obtenido el primer lugar en su promoción de secundaria
+        y que ingrese a la UNICAH en el primer periodo de clases inmediatamente.
+    </string>
+
+    <string name="mediabeca">
+        Esta beca es para personas de bajos recursos económicos comprobados, cubre el 100% de la mensualidad
+        financiada por la UNICAH y reembolsable por el beneficiario 4 meses despues de su graduación mediante un plan de pagos.
+    </string>
+
+    <string name="parciales">
+        Este descuento es para padres de familia que poseen 3 o más hijos activos o graduados en la UNICAH,
+        o si eres hijo de un empleado de la institucion.
+    </string>
+
+    <string name="postgrado">
+        Esta beca es para personas de bajos recursos económicos comprobados,
+        cubre el 100% de la mensualidad financiada por la UNICAH y reembolsable por el beneficiario 4
+        meses despues de su graduación mediante un plan de pagos.
+    </string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
