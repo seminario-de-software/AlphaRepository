@@ -3,8 +3,17 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#546efe</color>
-    <color name="colorArquitectura">#fefb54</color>
-    <color name="colorCivil">#acacac</color>
-    <color name="colorIndustrial">#fe5d54</color>
-    <color name="colorGestion">#fea354</color>
+    <color name="colorArquitectura">#1565c0</color>
+    <color name="colorAmbiental">#37474f</color>
+    <color name="colorComputacion">#283593</color>
+    <color name="colorCivil">#424242</color>
+    <color name="colorIndustrial">#c62828 </color>
+    <color name="colorGestion">#ef6c00 </color>
+    <color name="colorFinanzas">#2e7d32 </color>
+    <color name="colorMerca">#f9a825 </color>
+    <color name="colorDerecho">#ff8f00</color>
+    <color name="colorPsicologia">#4527a0</color>
+    <color name="colorMedicina">#0277bd</color>
+    <color name="colorOdonto">#558b2f</color>
+    <color name="colorEnfermeria">#00695c</color>
 </resources>
