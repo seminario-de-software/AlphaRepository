@@ -59,6 +59,14 @@ public class frgUniversidad extends Fragment {
                 ((MainActivity) getActivity()).LoadFragment(new frgFacultades());
             }
         });
+        Card = (CardView) frgView.findViewById(R.id.card_view2);
+        Card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                ((MainActivity) getActivity()).LoadFragment(new frgCampus());
+            }
+        });
 
         ImageView Img = (ImageView) frgView.findViewById(R.id.thumbnail);
         Glide.with(Img.getContext()).load(R.mipmap.virgen).into(Img);

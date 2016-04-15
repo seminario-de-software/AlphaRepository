@@ -47,7 +47,7 @@
                     android:layout_height="120dp"
                     android:layout_alignParentTop="true"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/sanpedroysanpablo" />
+                    />
 
                 <TextView
                     android:id="@+id/title"
@@ -98,7 +98,7 @@
                     android:layout_height="120dp"
                     android:layout_alignParentTop="true"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/sagradocorazondejesus" />
+                   />
 
                 <TextView
                     android:id="@+id/title2"
@@ -154,7 +154,7 @@
                         android:layout_height="120dp"
                         android:layout_alignParentTop="true"
                         android:scaleType="fitXY"
-                        android:src="@mipmap/santiagoapostol" />
+                         />
 
                     <TextView
                         android:id="@+id/title3"
@@ -205,7 +205,7 @@
                         android:layout_height="120dp"
                         android:layout_alignParentTop="true"
                         android:scaleType="fitXY"
-                        android:src="@mipmap/diosespiritusanto" />
+                        />
 
                     <TextView
                         android:id="@+id/title4"
@@ -262,7 +262,7 @@
                         android:layout_height="120dp"
                         android:layout_alignParentTop="true"
                         android:scaleType="fitXY"
-                        android:src="@mipmap/santaclara" />
+                        />
 
                     <TextView
                         android:id="@+id/title9"
@@ -313,7 +313,7 @@
                         android:layout_height="120dp"
                         android:layout_alignParentTop="true"
                         android:scaleType="fitXY"
-                        android:src="@mipmap/sanjorge" />
+                         />
 
                     <TextView
                         android:id="@+id/title10"
