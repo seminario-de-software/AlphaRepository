@@ -4,16 +4,11 @@
     android:layout_width="match_parent"
     android:id="@+id/swipeRefreshView"
     >
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,7 +16,7 @@
             android:textAlignment="center"
             android:layout_margin="@dimen/activity_vertical_margin"
             android:text="@string/txtRec"
-            android:id="@+id/txtRecordatorios"
+            android:id="@+id/lblNoticia"
             />
 
         <ListView
@@ -29,42 +24,8 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:id="@+id/lvRecordatorios"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textAlignment="center"
-            android:layout_margin="@dimen/activity_vertical_margin"
-            android:text="@string/txtAnun"
-            android:id="@+id/txtAnuncios"
-            />
-
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:id="@+id/lvAnuncios"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textAlignment="center"
-            android:layout_margin="@dimen/activity_vertical_margin"
-            android:text="@string/txtNoti"
-            android:id="@+id/txtNoticias"
-            />
-
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:id="@+id/lvNoticias"/>
-        </LinearLayout>
-    </ScrollView>
+
+    </LinearLayout>
 
 </android.support.v4.widget.SwipeRefreshLayout>

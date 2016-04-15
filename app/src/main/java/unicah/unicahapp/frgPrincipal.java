@@ -4,6 +4,7 @@ package unicah.unicahapp;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
@@ -50,8 +51,6 @@ public class frgPrincipal extends Fragment {
         vistaPrinciapal = inflater.inflate(R.layout.fragment_frg_principal, container, false);
 
         refreshLayout =   (SwipeRefreshLayout) vistaPrinciapal.findViewById(R.id.swipeRefreshView);
-        lvRecordatorios = (ListView) vistaPrinciapal.findViewById(R.id.lvRecordatorios);
-        lvAnuncios =      (ListView) vistaPrinciapal.findViewById(R.id.lvAnuncios);
         lvNoticias =      (ListView) vistaPrinciapal.findViewById(R.id.lvNoticias);
 
         getData();
@@ -61,6 +60,8 @@ public class frgPrincipal extends Fragment {
             public void onRefresh() {
                 // repoblar los campos
                 getData();
+                Snackbar.make(vistaPrinciapal,"Se han Actualizado los datos",Snackbar.LENGTH_LONG).show();
+                refreshLayout.setRefreshing(false);
             }
         });
 
@@ -85,11 +86,7 @@ public class frgPrincipal extends Fragment {
     // Metodos de uso privado
 
     private void getData(){
-        String[] recordatorios = new String[]{"Prueba 1","Prueba 2","Prueba 3","Prueba 4","Prueba 5"};
-        ArrayAdapter<String>adaptadorListas =  new ArrayAdapter<String>(getContext(),android.R.layout.simple_list_item_1,recordatorios);
-        lvRecordatorios.setAdapter(adaptadorListas);
-        lvAnuncios.setAdapter(adaptadorListas);
-        lvNoticias.setAdapter(adaptadorListas);
+        String[] titulos = {"Noticia 1","Noticia 2"};
 
     }
 

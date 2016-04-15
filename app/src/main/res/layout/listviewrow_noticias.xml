@@ -26,7 +26,7 @@
     <ImageView
         app:layout_widthPercent="50%"
         android:layout_height="wrap_content"
-        android:id="@+id/imgNoticia"
+        android:id="@+id/imgNoticiaHolder"
         android:layout_alignTop="@+id/txtTituloNoticia"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -37,12 +37,12 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Medium Text"
-        android:id="@+id/textView3"
+        android:id="@+id/txtResumenNoticia"
         android:layout_below="@+id/txtTituloNoticia"
         android:layout_alignLeft="@+id/txtTituloNoticia"
         android:layout_alignStart="@+id/txtTituloNoticia"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/imgNoticia"
-        android:layout_toStartOf="@+id/imgNoticia"
+        android:layout_toLeftOf="@+id/imgNoticiaHolder"
+        android:layout_toStartOf="@+id/imgNoticiaHolder"
         android:ellipsize="end" />
 </android.support.percent.PercentRelativeLayout>
