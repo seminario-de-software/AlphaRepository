@@ -1,0 +1,387 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="unicah.unicahapp.frgFacultades">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        >
+
+        <TableLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="unicah.unicahapp.MainActivity"
+            tools:showIn="@layout/app_bar_main"
+            android:weightSum="1.0"
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/title5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thumbnail"
+                    android:padding="16dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Ingenierías"
+                    android:textColor="#666"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="2dp"
+                    android:id="@+id/card_view"
+                    android:layout_width="150dp"
+                    android:layout_height="188dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_weight=".5"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/thumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/computacion" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/thumbnail"
+                            android:padding="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Ciencias de la Computación"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title"
+                            android:paddingLeft="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Ingeniería"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="2dp"
+                    android:id="@+id/card_view2"
+                    android:layout_width="150dp"
+                    android:layout_height="188dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardBackgroundColor="@color/colorCivil"
+                    android:layout_column="1"
+                    android:layout_gravity="left|top"
+                    android:layout_weight=".5"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/thumbnail2"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/civil" />
+
+                        <TextView
+                            android:id="@+id/title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/thumbnail2"
+                            android:padding="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Civil"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title2"
+                            android:paddingLeft="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Ingeniería"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="2dp"
+                    android:id="@+id/card_view3"
+                    android:layout_width="150dp"
+                    android:layout_height="188dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardBackgroundColor="@color/colorIndustrial"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_weight=".5"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/thumbnail3"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/industrial" />
+
+                        <TextView
+                            android:id="@+id/title3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/thumbnail3"
+                            android:padding="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Industrial"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title3"
+                            android:paddingLeft="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Ingeniería"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="2dp"
+                    android:id="@+id/card_view4"
+                    android:layout_width="150dp"
+                    android:layout_height="188dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardBackgroundColor="@color/colorArquitectura"
+                    android:layout_column="1"
+                    android:layout_gravity="left|top"
+                    android:layout_weight=".5"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/thumbnail4"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/arquitectura" />
+
+                        <TextView
+                            android:id="@+id/title4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/thumbnail4"
+                            android:padding="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Arquitectura"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title4"
+                            android:paddingLeft="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Ingeniería"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/title6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thumbnail"
+                    android:padding="20dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Salud"
+                    android:textColor="#666"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="2dp"
+                    android:id="@+id/card_view5"
+                    android:layout_width="150dp"
+                    android:layout_height="188dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardBackgroundColor="@color/colorGestion"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_weight=".5"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/thumbnail5"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/enfermeria" />
+
+                        <TextView
+                            android:id="@+id/title7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/thumbnail5"
+                            android:padding="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Enfermería"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title7"
+                            android:paddingLeft="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Salud"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="2dp"
+                    android:id="@+id/card_view8"
+                    android:layout_width="150dp"
+                    android:layout_height="188dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardBackgroundColor="@color/colorCivil"
+                    android:layout_column="1"
+                    android:layout_gravity="left|top"
+                    android:layout_weight=".5"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/thumbnail8"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/civil" />
+
+                        <TextView
+                            android:id="@+id/title8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/thumbnail8"
+                            android:padding="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Odontología"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title8"
+                            android:paddingLeft="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Salud"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</FrameLayout>

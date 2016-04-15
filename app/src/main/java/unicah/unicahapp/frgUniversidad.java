@@ -43,11 +43,20 @@ public class frgUniversidad extends Fragment {
         View frgView = inflater.inflate(R.layout.fragment_frg_universidad, container, false);
 
         CardView Card = (CardView) frgView.findViewById(R.id.card_view);
+
         Card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
                 ((MainActivity) getActivity()).LoadFragment(new frgUnicah());
+            }
+        });
+        Card = (CardView) frgView.findViewById(R.id.card_view3);
+        Card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                ((MainActivity) getActivity()).LoadFragment(new frgFacultades());
             }
         });
 
