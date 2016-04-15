@@ -188,7 +188,7 @@
                     android:layout_height="match_parent"
                     android:layout_alignParentTop="true"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_account_balance"
+                    android:src="@drawable/ic_account_balance_black_24dp"
                     />
             </TableRow>
             </TableLayout>

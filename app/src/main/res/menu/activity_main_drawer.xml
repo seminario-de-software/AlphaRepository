@@ -4,15 +4,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_principal"
-            android:icon="@drawable/ic_home"
+            android:icon="@drawable/ic_home_black_24dp"
             android:title="Pagina Principal" />
         <item
             android:id="@+id/nav_recordatorios"
-            android:icon="@drawable/ic_alarm_add"
+            android:icon="@drawable/ic_alarm_add_black_24dp"
             android:title="Recordatorios" />
         <item
             android:id="@+id/nav_universidad"
-            android:icon="@drawable/ic_account_balance"
+            android:icon="@drawable/ic_account_balance_black_24dp"
             android:title="La Universidad" />
 
     </group>
@@ -21,11 +21,11 @@
         <menu>
             <item
                 android:id="@+id/nav_conf"
-                android:icon="@drawable/ic_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
                 android:title="Configuracion" />
             <item
                 android:id="@+id/nav_about"
-                android:icon="@drawable/ic_help"
+                android:icon="@drawable/ic_help_black_24dp"
                 android:title="Acerca de" />
         </menu>
     </item>
