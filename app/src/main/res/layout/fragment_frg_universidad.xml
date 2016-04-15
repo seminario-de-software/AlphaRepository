@@ -3,7 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="unicah.unicahapp.frgUniversidad">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        >
 
     <TableLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -14,7 +18,22 @@
         tools:showIn="@layout/app_bar_main"
         android:weightSum="1.0"
         >
-
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thumbnail"
+                android:padding="12dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Conócenos"
+                android:textColor="#666"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -41,8 +60,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_alignParentTop="true"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/virgen" />
+                        android:scaleType="fitXY"/>
+                        <!--android:src="@mipmap/virgen"-->
 
                     <TextView
                         android:id="@+id/title"
@@ -92,8 +111,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_alignParentTop="true"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/allcampus" />
+                        android:scaleType="fitXY"/>
+                        <!--android:src="@mipmap/allcampus"-->
 
                     <TextView
                         android:id="@+id/title2"
@@ -148,8 +167,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_alignParentTop="true"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/allfacultades" />
+                        android:scaleType="fitXY"/>
+                       <!-- android:src="@mipmap/allfacultades" -->
 
                     <TextView
                         android:id="@+id/title3"
@@ -199,8 +218,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_alignParentTop="true"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/alumnos2_1" />
+                        android:scaleType="fitXY"/>
+                        <!--android:src="@mipmap/alumnos2_1" -->
 
                     <TextView
                         android:id="@+id/title4"
@@ -230,4 +249,5 @@
         </TableRow>
 
     </TableLayout>
+    </ScrollView>
 </FrameLayout>
