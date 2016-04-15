@@ -16,4 +16,6 @@
     <color name="colorMedicina">#0277bd</color>
     <color name="colorOdonto">#558b2f</color>
     <color name="colorEnfermeria">#00695c</color>
+    <color name="colorComunicaciones">#f9a825 </color>
+    <color name="colorRelaciones">#d84315</color>
 </resources>

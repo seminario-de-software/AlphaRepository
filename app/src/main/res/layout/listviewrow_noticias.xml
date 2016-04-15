@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1">
+
+    <TextView
+        app:layout_widthPercent="45%"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/txtTituloNoticia"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ellipsize="end" />
+
+    <!--
+    *   El ImageView sera reemplazado por
+    *   el SmartimageView
+     -->
+
+    <ImageView
+        app:layout_widthPercent="50%"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgNoticiaHolder"
+        android:layout_alignTop="@+id/txtTituloNoticia"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtResumenNoticia"
+        android:layout_below="@+id/txtTituloNoticia"
+        android:layout_alignLeft="@+id/txtTituloNoticia"
+        android:layout_alignStart="@+id/txtTituloNoticia"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imgNoticiaHolder"
+        android:layout_toStartOf="@+id/imgNoticiaHolder"
+        android:ellipsize="end" />
+</android.support.percent.PercentRelativeLayout>

@@ -4,6 +4,7 @@ package unicah.unicahapp;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
@@ -50,8 +51,6 @@ public class frgPrincipal extends Fragment {
         vistaPrinciapal = inflater.inflate(R.layout.fragment_frg_principal, container, false);
 
         refreshLayout =   (SwipeRefreshLayout) vistaPrinciapal.findViewById(R.id.swipeRefreshView);
-        lvRecordatorios = (ListView) vistaPrinciapal.findViewById(R.id.lvRecordatorios);
-        lvAnuncios =      (ListView) vistaPrinciapal.findViewById(R.id.lvAnuncios);
         lvNoticias =      (ListView) vistaPrinciapal.findViewById(R.id.lvNoticias);
 
         getData();
@@ -61,13 +60,13 @@ public class frgPrincipal extends Fragment {
             public void onRefresh() {
                 // repoblar los campos
                 getData();
+                Snackbar.make(vistaPrinciapal,"Se han Actualizado los datos",Snackbar.LENGTH_LONG).show();
+                refreshLayout.setRefreshing(false);
             }
         });
 
 
         // Poblacion de las listas
-
-
 
         return vistaPrinciapal;
 
@@ -87,11 +86,10 @@ public class frgPrincipal extends Fragment {
     // Metodos de uso privado
 
     private void getData(){
-        String[] recordatorios = new String[]{"Prueba 1","Prueba 2","Prueba 3","Prueba 4","Prueba 5"};
-        ArrayAdapter<String>adaptadorListas =  new ArrayAdapter<String>(getContext(),android.R.layout.simple_list_item_1,recordatorios);
-        lvRecordatorios.setAdapter(adaptadorListas);
-        lvAnuncios.setAdapter(adaptadorListas);
-        lvNoticias.setAdapter(adaptadorListas);
+        String[] titulos = {"Noticia 1","Noticia 2"};
+        String[] resumenes = {"Aliquam turpis ex, vulputate eget tempor rutrum, efficitur vel orci. Morbi nec quam elit. Proin et hendrerit metus, non sollicitudin nisl. Curabitur ut ullamcorper est. Cras congue tempor commodo. Integer laoreet, nunc id varius euismod, nisl diam convallis magna, id tempor tortor massa et lectus. Donec sit amet urna ut ligula condimentum placerat. Donec accumsan interdum consectetur. Vestibulum sed est dignissim, lacinia lacus at, tincidunt nibh. ","Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque blandit quam nisl, nec pharetra tellus placerat sit amet. Quisque sollicitudin iaculis felis, ut accumsan eros sollicitudin lacinia. Praesent commodo urna lorem, eu accumsan dolor fringilla eget. Duis pulvinar faucibus arcu a congue. Quisque auctor, lorem et efficitur luctus, felis nisl blandit quam, ut varius lacus diam id leo. Nunc consectetur quam a ex molestie, vitae dapibus urna venenatis. Nullam viverra, justo et venenatis dignissim, nisl neque faucibus odio, at elementum ex ex ut mi. Praesent enim sapien, rhoncus id varius eu, pulvinar auctor felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis euismod justo id neque tempus, sed suscipit lorem finibus. "};
+
+
 
     }
 
