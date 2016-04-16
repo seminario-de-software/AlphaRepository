@@ -76,7 +76,9 @@
 
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                >
                 <TableRow>
                     <ImageView
                         android:id="@+id/imgbeca1"
@@ -178,17 +180,33 @@
                 android:textStyle="bold"
                 android:text="Descubre mas" />
             <TableLayout
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:layout_width="match_parent"
                 android:weightSum="1.0">
             <TableRow
-                android:layout_weight=".5">
+                android:layout_weight=".5"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/campuslink"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/campus"
+                    />
+                <!--TextView
+                    android:layout_below="@+id/campuslink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    /-->
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentTop="true"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/ic_account_balance_black_24dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/school"
                     />
             </TableRow>
             </TableLayout>
