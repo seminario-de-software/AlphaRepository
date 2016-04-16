@@ -18,6 +18,26 @@
         la iglesia católica y se rige tanto por el derecho canónico como por las leyes de Honduras.
     </string>
 
+     <string name="campus_sanpedro">
+        Ubicado en la capital industrial del país San Pedro Sula, el campus San Pedro y San Pablo es el segundo campus más
+         gran de la Universidad Católica de Honduras. Dentro de la extensa oferta de carreras podemos encontrar: Ciencias de la
+         Salud, Ciencias Sociales, Ingenierías, Licenciaturas.
+    </string>
+
+     <string name="campus_sanpedro_telefono">
+           2540-3030.
+           5436-9090.
+    </string>
+
+         <string name="campus_sanpedro_email">
+           unicah@unicah.edu.
+    </string>
+
+     <string name="campus_sanpedro_address">
+           Colonia Zerón
+           San Pedro Sula.
+    </string>
+
     <string name="becacompleta">
         Esta beca se le otorga al recien graduado, que haya obtenido el primer lugar en su promoción de secundaria
         y que ingrese a la UNICAH en el primer periodo de clases inmediatamente.
