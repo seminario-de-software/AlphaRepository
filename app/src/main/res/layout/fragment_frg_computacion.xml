@@ -1,0 +1,143 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="unicah.unicahapp.frgUnicah">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            >
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/computacion"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Información" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:text="@string/computacion_intro" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent"
+                android:text="LEER MÁS" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/darker_gray"/>
+
+
+
+            <TableLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:weightSum="1.0">
+                <TableRow
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/campuslink"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/duration"
+                        />
+                    <!--TextView
+                        android:layout_below="@+id/campuslink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        /-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/plan"
+                        />
+                </TableRow>
+
+            </TableLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Tu futuro" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:text="@string/computacion_futuro" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent"
+                android:text="LEER MÁS" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
