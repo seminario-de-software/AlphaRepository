@@ -38,6 +38,14 @@
            San Pedro Sula.
     </string>
 
+    <string name="computacion_intro">
+        Es un modo de enfoque interdisciplinario que permite estudiar y comprender la realidad, con el propósito de implementar u optimizar sistemas complejos.
+        Puede también verse como la aplicación tecnológica de la teoría de sistemas a los esfuerzos de la ingeniería, adoptando en todo este trabajo el paradigma sistémico.
+        La ingeniería de ciencias de la computación integra otras disciplinas y grupos de especialidad en un esfuerzo de equipo, formando un proceso de desarrollo centrado.
+    </string>
+    <string name="computacion_futuro">
+        El Ingeniero en Ciencias de la Computación esta en capacidad de desarrollarse en empresas de cualquier ámbito como:
+    </string>
     <string name="becacompleta">
         Esta beca se le otorga al recien graduado, que haya obtenido el primer lugar en su promoción de secundaria
         y que ingrese a la UNICAH en el primer periodo de clases inmediatamente.
