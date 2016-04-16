@@ -15,10 +15,11 @@
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:id="@+id/card_view"
-        card_view:cardCornerRadius="6dp"
+        card_view:cardCornerRadius="@dimen/cardview_default_radius"
         android:layout_gravity="center"
         android:layout_column="0"
         android:layout_weight=".5"
+        android:elevation="@dimen/cardview_default_elevation"
         >
 
         <android.support.percent.PercentRelativeLayout
@@ -28,7 +29,7 @@
             android:weightSum="1">
 
             <TextView
-                app:layout_widthPercent="45%"
+                app:layout_widthPercent="60%"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
@@ -47,7 +48,7 @@
              -->
 
             <ImageView
-                app:layout_widthPercent="50%"
+                app:layout_widthPercent="40%"
                 android:layout_height="80dp"
                 android:id="@+id/imgNoticiaHolder"
                 android:layout_alignTop="@+id/txtTituloNoticia"

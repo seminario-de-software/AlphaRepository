@@ -3,6 +3,7 @@ package unicah.unicahapp;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,16 @@ public class frgCampus extends Fragment {
 
         View frgView = inflater.inflate(R.layout.fragment_frg_campus, container, false);
 
+        CardView Card = (CardView) frgView.findViewById(R.id.card_view);
+
+        Card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                ((MainActivity) getActivity()).LoadFragment(new frgCampusSanPedro());
+            }
+        });
+
         ImageView Img = (ImageView) frgView.findViewById(R.id.thumbnail);
         Glide.with(Img.getContext()).load(R.mipmap.sanpedroysanpablo).into(Img);
 
@@ -49,5 +60,7 @@ public class frgCampus extends Fragment {
 
         return frgView;
     }
+
+
 
 }

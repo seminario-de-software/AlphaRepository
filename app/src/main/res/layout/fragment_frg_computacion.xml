@@ -98,6 +98,31 @@
                         android:src="@mipmap/plan"
                         />
                 </TableRow>
+                <TableRow
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:text="4 años"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:foreground="@color/abc_primary_text_material_light" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:text="Plan de Estudio"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="#000000"/>
+
+                </TableRow>
 
             </TableLayout>
             <View
